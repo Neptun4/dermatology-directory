@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UK Dermatologist Directory</title>
 
-  <!-- Bootstrap 5 CSS -->
+  <!-- 🔹 Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
 
-  <!-- Google Font -->
+  <!-- 🔹 Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <!-- 🔹 Custom CSS -->
+  <link href="style.css" rel="stylesheet" />
 
   <style>
     body {
@@ -20,42 +22,49 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- 🔹 Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
       <a class="navbar-brand" href="#">Derm Directory</a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="bg-light p-5 text-center">
-    <h1>Find Trusted UK Dermatologists</h1>
-    <p class="lead">Plus skincare help for acne scars</p>
+  <!-- 🔹 Hero Section -->
+  <header class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="display-5">Find Trusted UK Dermatologists</h1>
+      <p class="lead">Plus skincare tips for acne scars</p>
+    </div>
   </header>
 
-  <!-- Directory Section -->
-  <section class="container py-5">
-    <h2 class="mb-4">Featured Dermatologists</h2>
-    <div class="row" id="directory">
-      <!-- Cards will be inserted here later with JS -->
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <div class="card-body">
-            <h5 class="card-title">Dr. Sarah Lee</h5>
-            <p class="card-text">ClearSkin Clinic, London</p>
-            <a href="https://example.com" target="_blank" class="btn btn-outline-primary">Visit Website</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- 🔹 Dermatologist Cards Section -->
+ <section class="container my-5">
+  <h2 class="mb-4">Featured Dermatologists</h2>
 
-  <!-- Footer -->
+  <!-- 🔎 Search Bar -->
+  <div class="mb-4">
+    <input
+      type="text"
+      id="searchInput"
+      class="form-control"
+      placeholder="Search by name, city, or clinic..."
+    />
+  </div>
+
+  <!-- Cards go here -->
+  <div class="row" id="directory"></div>
+</section>
+
+
+  <!-- 🔹 Footer -->
   <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Derm Directory. All rights reserved.</p>
+    <p class="mb-0">&copy; 2025 Derm Directory. All rights reserved.</p>
   </footer>
 
-  <!-- Bootstrap JS -->
+  <!-- 🔹 Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+
 </body>
 </html>
