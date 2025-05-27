@@ -7,64 +7,93 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom Styles -->
   <link href="style.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="Learn how to treat acne scars with dermatologist advice and product tips. Trusted UK skincare guidance.">
   <meta name="keywords" content="acne scars, scar treatment, skincare, UK dermatologists, skin healing">
-
 </head>
-<body>
 
+<body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="index.html">Derm Directory</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="acne-scars.html">Acne Scars Help</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="bg-light p-5 text-center">
-    <h1>How to Treat Acne Scars</h1>
-    <p class="lead">Dermatologist-backed advice, routines, and product recommendations.</p>
+  <!-- Hero -->
+  <header class="bg-light text-center py-5 border-bottom">
+    <div class="container">
+      <h1 class="display-5 fw-bold">How to Treat Acne Scars</h1>
+      <p class="lead text-muted">Dermatologist-backed advice, routines, and product recommendations</p>
+    </div>
   </header>
 
-  <!-- Content Section -->
-  <main class="container py-5">
-    <section>
-      <h2>Types of Acne Scars</h2>
-      <ul>
-        <li>Boxcar scars</li>
-        <li>Ice pick scars</li>
-        <li>Rolling scars</li>
-      </ul>
-    </section>
+  <!-- Product Cards Section -->
+ <section class="my-5 p-4 bg-light rounded">
+  <h2 class="mb-4 text-center">✨ Recommended Skincare Products</h2>
+  <div class="row">
 
-    <section class="mt-4">
-      <h2>Top Skincare Products</h2>
-      <p>Recommended by dermatologists:</p>
-      <ul>
-        <li><a href="https://www.amazon.co.uk/dp/B01N4I8FOY" target="_blank">The Ordinary Niacinamide 10% + Zinc 1%</a> ⭐ (aff link)</li>
-        <li><a href="https://www.amazon.co.uk/dp/B00NT8HO2Q" target="_blank">CeraVe Resurfacing Retinol Serum</a> ⭐</li>
-        <li><a href="https://www.amazon.co.uk/dp/B01N9K6P8W" target="_blank">La Roche-Posay Effaclar Duo+</a></li>
-      </ul>
-    </section>
+    <!-- Card 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="images/niacinamide.jpg" class="card-img-top" alt="The Ordinary Niacinamide">
+        <div class="card-body">
+          <h5 class="card-title">The Ordinary Niacinamide 10% + Zinc 1%</h5>
+          <p class="card-text">Helps with redness, oil control, and overall texture improvement.</p>
+          <a href="https://www.amazon.co.uk/dp/B01N4I8FOY" target="_blank" class="btn btn-outline-primary w-100">Buy on Amazon</a>
+        </div>
+      </div>
+    </div>
 
-    <section class="mt-4">
-      <h2>Professional Treatments</h2>
-      <p>Consult your dermatologist about:</p>
-      <ul>
-        <li>Chemical peels</li>
-        <li>Microneedling</li>
-        <li>Laser resurfacing</li>
-      </ul>
-    </section>
-  </main>
+    <!-- Card 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="images/cerave.jpg" class="card-img-top" alt="CeraVe Retinol Serum">
+        <div class="card-body">
+          <h5 class="card-title">CeraVe Resurfacing Retinol Serum</h5>
+          <p class="card-text">Supports smoother skin and reduces post-acne marks.</p>
+          <a href="https://www.amazon.co.uk/dp/B00NT8HO2Q" target="_blank" class="btn btn-outline-primary w-100">Buy on Amazon</a>
+        </div>
+      </div>
+    </div>
 
-  <!-- Footer -->
+    <!-- Card 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="images/effaclar.jpg" class="card-img-top" alt="La Roche-Posay Effaclar Duo+">
+        <div class="card-body">
+          <h5 class="card-title">La Roche-Posay Effaclar Duo+</h5>
+          <p class="card-text">Helps fade dark spots while preventing new breakouts.</p>
+          <a href="https://www.amazon.co.uk/dp/B01N9K6P8W" target="_blank" class="btn btn-outline-primary w-100">Buy on Amazon</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     <p class="mb-0">&copy; 2025 Derm Directory. All rights reserved.</p>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
